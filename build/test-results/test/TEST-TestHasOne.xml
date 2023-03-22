@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestHasOne" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-21T04:39:01" hostname="DESKTOP-D5Q0BC8" time="0.04">
+<testsuite name="TestHasOne" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-21T18:34:53" hostname="DESKTOP-D5Q0BC8" time="0.05">
   <properties/>
-  <testcase name="testValidarNumero()" classname="TestHasOne" time="0.04"/>
+  <testcase name="testValidarNumero()" classname="TestHasOne" time="0.05"/>
   <system-out><![CDATA[es un numerotrue
 is true
 is true
