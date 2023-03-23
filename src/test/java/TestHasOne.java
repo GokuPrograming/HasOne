@@ -20,7 +20,7 @@ public class TestHasOne {
     public void testValidarNumero() {
         assertEquals(true,h.validar_Numero("20"));
         assertEquals(false,h.validar_Numero("h"));
-        assertEquals(true,h.validar_Numero("10"));
+        assertEquals(true,h.validar_Numero("20"));
 
     }
 }

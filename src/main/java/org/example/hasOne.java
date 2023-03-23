@@ -48,12 +48,8 @@ public class hasOne {
         boolean isNumeric = (n != null && n.matches("[0.01-9.99]+"));// valida que el valor ingresado sea un numero.
         if (isNumeric == true) {
             n1 = Integer.parseInt(n);
-            JOptionPane.showMessageDialog(null,
-                    "Felicidades!!\n" +
-                            " El valor ingresado cuenta almenos un 1" +
-                            "\n el numero ingresado fue: " + n1);
+            hasOne(n1);// entra al metodo
             // System.out.println("es un numero" + isNumeric);
-            hasOne(n1);
             return true;
         } else {
             JOptionPane.showMessageDialog(null, "Lo sentimos," +
@@ -64,14 +60,30 @@ public class hasOne {
 
     }
 
+
     public boolean hasOne(int n) {
+        boolean encontrar = false;
         while (n != 0) {
-            if (n % 10 == 1)
-                return true;
-            System.out.println("is true");
+            if (n % 10 == 1) {
+                encontrar = true;
+                break;
+            }
             n /= 10;
         }
-        System.out.println("is false");
-        return false;
+        if (encontrar) {
+            JOptionPane.showMessageDialog(null,
+                    "Felicidades!!\n" +
+                            " El valor ingresado cuenta almenos un 1" +
+                            "\n el numero ingresado fue:   " + n);
+            System.out.println("es verdad");
+            return true;
+        } else {
+            JOptionPane.showMessageDialog(null,
+                    "lo sentimos ese numero no es funcional" + n);
+            System.out.println("is false");
+            return false;
+        }
     }
 }
+
+
